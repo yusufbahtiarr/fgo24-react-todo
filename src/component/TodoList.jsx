@@ -13,11 +13,11 @@ function TodoList() {
           todos.map((todo) => (
             <li
               key={todo.id}
-              className="flex justify-between items-center p-6 border-b-2 border-gray-300"
+              className="flex justify-between items-center hover:bg-slate-300 cursor-pointer border-b-2 border-gray-300"
             >
               <label
                 htmlFor={todo.id}
-                className="flex flex-1 items-center justify-start gap-4 w-full "
+                className="flex flex-1 items-center justify-start gap-4 p-6 w-full cursor-pointer"
               >
                 <input
                   id={todo.id}
@@ -39,7 +39,7 @@ function TodoList() {
               </label>
               <button
                 onClick={() => removeTodo(todo.id)}
-                className="bg-amber-600 rounded px-3 py-2 w-20  font-medium cursor-pointer text-white hover:text-gray-100 hover:bg-amber-500"
+                className="bg-amber-600 rounded px-3 py-2 w-20 mr-6 font-medium cursor-pointer text-white hover:text-gray-100 hover:bg-amber-500"
               >
                 DELETE
               </button>

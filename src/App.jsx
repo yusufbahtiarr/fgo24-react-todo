@@ -4,7 +4,7 @@ import TodoList from "./component/TodoList";
 
 function App() {
   return (
-    <div className="max-w-lg bg-slate-200 min-h-140 rounded-2xl mx-auto sm:mx-10 mt-10">
+    <div className="max-w-lg bg-slate-200 min-h-140 rounded-2xl mx-auto mt-10">
       <TodoProvider>
         <Input />
         <TodoList />
