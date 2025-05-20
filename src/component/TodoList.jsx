@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { TodoContext } from "./TodoContext";
-
+import { Trash } from "lucide-react";
 function TodoList() {
   const { todos, removeTodo, toggleTodo } = useContext(TodoContext);
 
@@ -39,9 +39,10 @@ function TodoList() {
               </label>
               <button
                 onClick={() => removeTodo(todo.id)}
-                className="bg-amber-600 rounded px-3 py-2 w-20 mr-6 font-medium cursor-pointer text-white hover:text-gray-100 hover:bg-amber-500"
+                // className="bg-amber-600 rounded px-3 py-2 w-20 mr-6 font-medium cursor-pointer text-white hover:text-gray-100 hover:bg-amber-500"
+                className="cursor-pointer pr-6"
               >
-                DELETE
+                <Trash className="size-6" />
               </button>
             </li>
           ))
