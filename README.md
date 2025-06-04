@@ -53,7 +53,7 @@ cd fgo24-react-todo
 3. Build image
 
 ```bash
-docker build. -t todoapp:latest
+docker build . -t todoapp:latest
 ```
 
 4. Run image with docker
