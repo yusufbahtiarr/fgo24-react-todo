@@ -4,7 +4,7 @@ WORKDIR /workspace
 
 RUN apt-get update && apt-get install nginx nodejs npm -y
 
-COPY package*.json
+COPY package*.json .
 RUN npm install
 
 COPY . .
