@@ -70,8 +70,6 @@ To develop this app, we are using some dependencies:
 
 - ReactJS
 - TailwindCSS
-- Redux Toolkit
-- Redux Persist
 - Lucide Icon
 - React Hook Form
 - React Router Dom
